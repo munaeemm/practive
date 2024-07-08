@@ -4,15 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <nav> 
+    <div class="header">
+
+      <div class="header-left"><img class="header-logo" src="images/logo.png" alt=""> </div>
+
+      <div class="header-middle"> 
+        <input class="header-searchbox"> 
+        
+        <button class="header-search-button"><img class="header-search-icon" src="images/search-icon.svg" alt="Search"></button>
+
+      </div>
+
+      <div class="header-right">
+
+        <div class="header-cart">
+          <img class="headerright-cart-icon" src="images/cart-shopping-fast-svgrepo-com.svg" alt="Cart">
+          <span class="header-cart-count">0</span>
+        </div> <!-- Close header-cart div -->
+
+        <div class="headerright-orders">Orders</div>
+
+      </div> 
+    </div> 
+  </nav>
+
+  <div class="dev-container">
+    <div class="dev-columnleft">column 1</div>
+    <div class="dev-columnright"><button>Add Products</button></div>
+  </div>
+
+  <div class="products-container">
     <div class="product">
-        <img src="product-image.jpg" alt="Product Image">
-        <h2>Product Name</h2>
-        <p>Product description goes here. It provides details about the product features and benefits.</p>
-        <div class="price">$19.99</div>
-        <button>Add to Cart</button>
+      <img src="images/product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>$19.99</p>
+      <button>Add to Cart</button>
     </div>
+
+    
 </body>
 </html>
