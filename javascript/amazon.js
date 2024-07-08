@@ -1,4 +1,3 @@
-
 const products = [
     {
         image: 'images/RX101_Black_FRONT.jpg',
@@ -17,17 +16,18 @@ const products = [
     },
 ];
 
+
+
 let applyHTML = '';
 
-products.forEach((product) => {
+products.forEach((item) => {
 let html = ` <div class="product">
-<img class="product-image" src="${product.image}" alt="Product 1">
-<h3 class="product-name">${product.name}</h3>
-<p class="price">$ ${(product.price/100).toFixed(2)}</p>
+<img class="product-image" src="${item.image}" alt="Product 1">
+<h3 class="product-name">${item.name}</h3>
+<p class="price">$ ${(item.price/100).toFixed(2)}</p>
 <input type="number" value="1" min="1" max="99" class="product-quantity-box">
-<button>Add to Cart</button>
+<button class="button-add-to-cart" data-product-name = "${item.name}">Add to Cart</button>
 </div> `;
-console.log(html);
 applyHTML += html;
 });
 
@@ -38,3 +38,12 @@ function displayProduct () {
 }
 
 displayProduct();
+
+document.querySelectorAll('.button-add-to-cart').forEach((element) => {
+    element.addEventListener('click', () => {
+        c
+
+    });
+});
+
+
