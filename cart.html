@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/Headerstyle.css">
+    <link rel="stylesheet" href="css/Cart.css">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <div class="header-left"><img class="header-logo" src="images/logo.png" alt=""></div>
+            <div class="header-middle">
+                <input class="header-searchbox">
+                <button class="header-search-button"><img class="header-search-icon" src="images/search-icon.svg" alt="Search"></button>
+            </div>
+            <div class="header-right">
+                <a href="index.html">
+                    <div class="header-cart">
+                        <img class="headerright-cart-icon" src="images/cart-shopping-fast-svgrepo-com.svg" alt="Cart">
+                        <span class="header-cart-count">0</span>
+                    </div>
+                </a>
+                <div class="headerright-orders">Orders</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cart-container">
+        <h1>Your Cart</h1>
+        <div class="cart-products">
+            
+            <div class="product">
+                <hr style="border-top: 1px solid #ccc; width: 100%; margin: 20px 0;">
+                <h3 class="product-name">Item 1</h3>
+                <h3 class="inCartQuantity"> Quantity </h3>
+                <p class="price">£4545</p> <!-- Convert price to dollars and format to 2 decimal places -->
+                <button class="button-remove-from-cart" data-button-remove-item="${item.id}">Remove item</button>
+                <hr style="border-top: 1px solid #ccc; width: 100%; margin: 20px 0;">
+                </div> 
+                <!-- Cart products will be dynamically generated here -->
+        </div>
+        <div class="cart-total">
+            <hr style="border-top: 2px solid #ff0000; width: 100%; margin: 20px 0;">
+
+            <h2>Total: $<span id="total-price">0.00</span></h2>
+            <button id="checkout">Checkout</button>
+            <hr style="border-top: 2px solid #ff0000; width: 100%; margin: 20px 0;">
+
+        </div>
+    </div>
+
+
+    <script type="module" src="javascript/checkout.js"></script>
+</body>
+</html>
